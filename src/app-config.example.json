@@ -1,0 +1,9 @@
+{
+    "port": 3000,
+    "bot": {
+        "group_id": -1,
+        "token": "token",
+        "secret": "secret",
+        "confirmCode": "confirmCode"
+    }
+}

@@ -1,0 +1,31 @@
+[
+    {
+        "peer_id": 2000000001,
+        "subscriptions": {
+            "Core_TestProj_TestBuildDesktopMaster": "🖥️ Desktop master",
+            "Core_TestProj_TestBuildMobileMaster": "📱 Mobile master",
+            "Core_TestProj_ExampleOtherName": "Test Project"
+        },
+        "alwaysShowResultLink": false,
+        "extraLinks": [
+            {
+                "trigger": "Core_TestProj_TestBuildDesktopMaster",
+                "links": [
+                    {
+                        "url": "https://example.com",
+                        "text": "🔐 example.com"
+                    }
+                ]
+            },
+            {
+                "trigger": "Core_TestProj_TestBuildMobileMaster",
+                "links": [
+                    {
+                        "url": "https://mobile.example.com",
+                        "text": "🔐 mobile.example.com"
+                    }
+                ]
+            }
+        ]
+    }
+]

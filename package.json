@@ -1,0 +1,32 @@
+{
+    "name": "vk-teamcity-bot",
+    "version": "1.2.0",
+    "description": "",
+    "type": "module",
+    "private": true,
+    "author": "Dmitry <dmitry@cojam.ru> (https://e965.ru)",
+    "license": "MIT",
+    "main": "./src/index.js",
+    "scripts": {
+        "start": "node --experimental-json-modules ./src/index.js",
+        "prettier": "prettier --write **/*.{json,js,md,html}",
+        "lint-staged": "lint-staged",
+        "prepare": "is-ci || husky install"
+    },
+    "lint-staged": {
+        "*.{json,js}": [
+            "prettier --write"
+        ]
+    },
+    "dependencies": {
+        "@tinyhttp/app": "2.0.17",
+        "milliparsec": "2.2.1",
+        "node-vk-bot-api": "3.5.0"
+    },
+    "devDependencies": {
+        "husky": "7.0.2",
+        "is-ci": "3.0.1",
+        "lint-staged": "11.2.3",
+        "prettier": "2.4.1"
+    }
+}
